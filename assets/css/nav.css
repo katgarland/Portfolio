@@ -11,7 +11,6 @@ nav {
 	align-content: center;
 	justify-items: center;
 	z-index: 10;
-
 } 
 
 .main {
@@ -119,8 +118,8 @@ nav {
 
 .hb_checkbox:checked ~ .main {
 	top: 160px;
-	background-color: rgb(20 20 20/0.9);
-	height: 220px;
+	background-color: rgb(20 20 20/0.95);
+	height: 260px;
 	border-top: solid 1.25px white;
 	border-bottom: solid 1.25px white;
 }
@@ -155,30 +154,20 @@ nav {
 		/* justify-content: center; */
 		width: 100vw;
 		align-items: center;
-		padding: 70px 0 0 0;
-	}
-
-
-	 #nav-box {
-		padding: 0;
-		height: 80px;
-		width: 75vw;
 	}
 
 	#nav-box h1 { 
 		font: 400 22px/1.5 "Montserrat", sans-serif; 
 		align-content: center;
-		padding: 32px 0 0 0;
+		padding: 20px 0 0 0;
+		margin: 28px;
 	}
 
 	.secondary #nav-box { display: none; }
 	.tertiary #nav-box { display: none; }
 
-
 #nav-box {
-	/* background-color: rgb(20 20 20); 
-	border: solid 1.25px lightgray;
-	border-radius: 10px; */
+	width: 75vw;
 	height: 30px;
 	text-align: center;
 	margin-bottom: 10px;
@@ -187,6 +176,7 @@ nav { text-align: center; }
 .main { padding: 0; }
 nav a { height: 30px; padding-bottom: 20px;}
 
+/* fixes problem of checkbox being checked when it is supposed to be hidden */
 .hb_checkbox {
 	z-index: 100;
 }
