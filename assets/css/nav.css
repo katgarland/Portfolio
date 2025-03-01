@@ -5,7 +5,8 @@ nav {
 	display: flex;
 	flex-direction: column; 
 	/* width: 200px; */
-	width: 150px;
+	width: 200px;
+
 	/* align-items: center;  */
 	align-content: center;
 	justify-items: center;
@@ -17,20 +18,21 @@ nav {
 	position: fixed;
 	margin: 0;
 	padding-top: 20px;
-	padding-left: 46px;
+	padding-left: 30px;
+	background-color: rgb(20 20 20);
 }
 
 /* BOXES
 =======================*/
 
 #nav-box {
-	background-color: rgb(20 20 20);
-	border: solid 1.25px lightgray;
-	border-radius: 10px;
+	
+	/* border: solid 1.25px lightgray; */
+	/* border-radius: 10px; */
 	/* width: 272px; */
-	width: 180px;
+	width: 140px;
 	margin-top: 12px;
-	text-align: center; /* yuhh letsgo */
+	text-align: left; /* yuhh letsgo */
 	transition: 0.075s ease-in;
 }
 
@@ -49,19 +51,22 @@ nav {
 
 /* SECONDARY LINE NAV */
 .secondary #nav-box {
-	border: none;
+	border-top: solid 1.25px lightsteelblue;
+	border-bottom: solid 1.25px lightsteelblue;
 	border-radius: 0px;
 	text-align: left;
-	margin: 12px 0 6px 0px;
+	margin: 28px 0 26px 0px;
+	padding-top: 6px; padding-bottom: 16px;
 }
 
 /* TERTIARY LINE NAV */
 .tertiary #nav-box {
 	border: none;
-	border-left: solid 1.25px lightsteelblue;
+	/* border-left: solid 1.25px lightsteelblue; */
 	border-radius: 0px;
 	text-align: left;
 	margin: 0;
+	margin-top: 20px;
 }
 
 
@@ -73,15 +78,21 @@ nav {
 /* HOVER ANIMATIONS
 ================================ */
 #nav-box:hover {
-	border: solid 1.25px gold;
+	/* border: solid 1.25px gold; */
 }
 #nav-box:hover h1 {
 	color: gold;
+	text-decoration-line: underline;
+}
+
+.secondary #nav-box:hover h1 {
+	color: gold;
+	text-decoration: none;
 }
 
 /* making sure the secondary box doesnt change */
 .secondary #nav-box:hover {
-	border: none;
+	/* border: none; */
 	/* border-left: solid 1.25px lightsteelblue; */
 	border-radius: 0px;
 	text-align: left;
@@ -90,11 +101,11 @@ nav {
 
 .tertiary #nav-box:hover {
 	border: none;
-	border-left: solid 1.25px lightsteelblue;
+	/* border-left: solid 1.25px lightsteelblue; */
 	border-radius: 0px;
-	text-align: left;
 	/* margin: 20px 0 12px 34px; */
 }
+
 /* styling the secondary list hovers */
 .secondary #nav-box li a:hover { color: gold; }
 .tertiary #nav-box li a:hover { color: gold; }
@@ -107,10 +118,12 @@ nav {
 /* Attempting to code in the checkbox to work!!! */
 
 .hb_checkbox:checked ~ .main {
-	top: 0px;
-	background-color: rgb(20 20 20/0.8)
+	top: 160px;
+	background-color: rgb(20 20 20/0.9);
+	height: 220px;
+	border-top: solid 1.25px white;
+	border-bottom: solid 1.25px white;
 }
-
 
 
 
@@ -133,7 +146,6 @@ nav {
 		margin: 0 auto; 
 		display: flex;
 		flex: 1 0 auto;
-
 	 } 
 
 	.main {
@@ -142,10 +154,10 @@ nav {
 		/* padding: 80px 0 0 0; */
 		/* justify-content: center; */
 		width: 100vw;
-		height: 100vh;
 		align-items: center;
 		padding: 70px 0 0 0;
 	}
+
 
 	 #nav-box {
 		padding: 0;
@@ -156,11 +168,28 @@ nav {
 	#nav-box h1 { 
 		font: 400 22px/1.5 "Montserrat", sans-serif; 
 		align-content: center;
-		padding: 22px 0 0 0;
+		padding: 32px 0 0 0;
 	}
 
 	.secondary #nav-box { display: none; }
 	.tertiary #nav-box { display: none; }
+
+
+#nav-box {
+	/* background-color: rgb(20 20 20); 
+	border: solid 1.25px lightgray;
+	border-radius: 10px; */
+	height: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+nav { text-align: center; }
+.main { padding: 0; }
+nav a { height: 30px; padding-bottom: 20px;}
+
+.hb_checkbox {
+	z-index: 100;
+}
 }
 
 /* 
@@ -191,5 +220,3 @@ nav {
 	#nav-box { width: 320px; margin-left: 80px; }
 	.secondary #nav-box { margin: 20px 0 0 100px; } */
 } 
-
-
