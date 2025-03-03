@@ -30,7 +30,7 @@ nav {
 	/* border-radius: 10px; */
 	/* width: 272px; */
 	width: 140px;
-	margin-top: 12px;
+	margin-top: 2px;
 	text-align: left; /* yuhh letsgo */
 	transition: 0.075s ease-in;
 }
@@ -117,11 +117,15 @@ nav {
 /* Attempting to code in the checkbox to work!!! */
 
 .hb_checkbox:checked ~ .main {
-	top: 160px;
-	background-color: rgb(20 20 20/0.95);
-	height: 260px;
-	border-top: solid 1.25px white;
-	border-bottom: solid 1.25px white;
+	/* top: 160px; */
+	background-color: rgb(20 20 20/0.98);
+	/* height: 260px; */
+	/* border-top: solid 1.25px white;
+	border-bottom: solid 1.25px white; */
+
+	height: 100%;
+	top: 54px; bottom: 54px;
+	/* justify-content: center; */
 }
 
 
@@ -149,32 +153,76 @@ nav {
 
 	.main {
 		display: flex;
-		margin: 0 auto;
+		margin: 0 auto; padding: 0;
 		/* padding: 80px 0 0 0; */
 		/* justify-content: center; */
 		width: 100vw;
 		align-items: center;
+		/* justify-content: center; */
+
+	}
+
+	.box-wrapper {
+		display: flex;
+		flex-direction: column;
+		top: 0;
+		justify-content: center;
+		flex: 0 1 auto;
+		padding-top: 10vh;
 	}
 
 	#nav-box h1 { 
-		font: 400 22px/1.5 "Montserrat", sans-serif; 
+		font: 400 20px/1.5 "Montserrat", sans-serif; 
+		position: relative;
 		align-content: center;
-		padding: 20px 0 0 0;
-		margin: 28px;
+		/* padding: 20px 0 0 0; */
+		/* margin: 28px; */
+		/* padding-bottom: 20px; */
+		height: 50px;
+		padding: 0;
 	}
 
-	.secondary #nav-box { display: none; }
-	.tertiary #nav-box { display: none; }
+	#nav-box a {
+		font: 400 20px/1.5 "Montserrat", sans-serif; 
+	}
+
+	.secondary #nav-box { 
+		/* display: none;  */
+		display: flex;
+		margin: 18px 0 14px 0;
+		justify-content: center;
+		justify-items: center;
+		padding-top: 10px;
+		height: 70px;
+	}
+	.secondary #nav-box a h1 { font: 400 24px/1.5 "Montserrat", sans-serif }
+
+	.tertiary #nav-box { 
+		/* display: none;  */
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.tertiary #nav-box ul li {
+		padding-bottom: 20px;
+	}
 
 #nav-box {
 	width: 75vw;
-	height: 30px;
 	text-align: center;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
+	height: 50px;
+	border: 0;
+	margin: 0;
+	/* height: 40px; */
 }
 nav { text-align: center; }
 .main { padding: 0; }
-nav a { height: 30px; padding-bottom: 20px;}
+
+nav a { height: auto; background-color: rgb(20 20 20/0.0); }
+nav h1 { height: auto; }
+/* nav a { height: 30px; padding-bottom: 30px;} */
 
 /* fixes problem of checkbox being checked when it is supposed to be hidden */
 .hb_checkbox {

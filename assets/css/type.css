@@ -158,4 +158,5 @@ p > a {
 /* medium screen */
 @media (max-width: 768px) {
 	.page-title {  padding-top: 20px; }
+	nav a { background-color: rgb(20 20 20/0.0); }
 }
