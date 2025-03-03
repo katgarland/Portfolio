@@ -22,12 +22,13 @@ main {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	padding-left: 220px; padding-right: 100px; padding-top: 32px;
+	padding-left: 270px; padding-right: 100px; padding-top: 32px;
 	justify-content: center;
 }
 
 /* PAGE STRUCTURES
 =======================*/
+
 /* double span - two columns ======================== 2 */
 .double-span {
 	display: flex;
@@ -39,7 +40,7 @@ main {
 .double-span-1 {
 	width: 50%;
 	justify-content: center;
-	text-align: center;
+	/* text-align: center; */
 	padding-right: 10px;
 }
 
@@ -54,8 +55,20 @@ main {
 	text-align: center;
 }
 
-/* FOOTER
-=======================*/
+.double-span-2 img { width: 100%; border-radius: 10px; }
+
+/* HERO BOX 
+========================= */
+.hero {
+	display: flex;
+	background-color: lightsteelblue;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	padding: 60px 40px;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+}
 
 footer {
 	position: sticky;
@@ -78,8 +91,6 @@ footer a { /* katherine garland (so they dont forget who theyre looking at) */
 }
 
 footer a:hover { color: gold; }
-
-
 
 footer a:nth-of-type(2) { /* current page marker */
 	display: flex;
@@ -132,7 +143,7 @@ a .button button {
 	border: solid 1.25px lightgrey;
 	height: auto;
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-color: rgb(20 20 20);
 }
 
@@ -176,8 +187,6 @@ a .button button:hover {
 	footer { max-height: 80px; padding: 13px 0 10px 22px;  }
 	footer a:nth-of-type(2) { position: static; padding-top: 0; }
 	.foot { height: 54px; }
-
-
 }
 
 /* 
@@ -198,9 +207,12 @@ a .button button:hover {
 /* 
 =Xtra Large Screen > 992px Larger than Fullscreen Mac Window
 =============================== */
-@media (min-width: 1400px) { 
+@media (min-width: 1600px) { 
 
-	.page-wrapper { max-width: 1600px;}
+	.page-wrapper { 
+		max-width: 1400px;
+		padding-left: 200px; padding-right: 200px; padding-top: 32px;
+	}
 
 } 
 

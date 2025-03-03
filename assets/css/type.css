@@ -1,13 +1,21 @@
  
 /* HEADERS  */ 
  h1 {
- 	font: 400 46px/1.2 "Montserrat", sans-serif;
+ 	font: 400 56px/1.2 "Montserrat", sans-serif;
 	color: white;
-	padding-bottom: 16px 
+	padding-bottom: 20px; 
+	letter-spacing: -1px;
  }
 
+ .hero h1 {
+	font: 400 70px/1.2 "Montserrat", sans-serif;
+	font-style: italic;
+	color: rgb(20 20 20);
+	letter-spacing: -2px;
+}
+
  .page-title {
-	font: 400 60px/1.2 "Montserrat", sans-serif;
+	font: 400 70px/1.2 "Montserrat", sans-serif;
 	padding: 80px 0 60px 0;
 	text-align: center;
 }
@@ -86,6 +94,7 @@ nav h1 {
 	padding-top: 10px; padding-bottom: 0px;
 	font: 400 18px/1.5 "Montserrat", sans-serif;
 	color: lightgrey;
+	letter-spacing: -0.2px;
 }
 
 nav a { color: lightgrey; background-color: rgb(20 20 20); }
@@ -126,6 +135,8 @@ p {
 	padding-bottom: 6px;
 	padding-top: 4px;
 	max-width: 780px;
+
+	letter-spacing: -0.1px;
 }
 
 p > a { 
@@ -159,4 +170,32 @@ p > a {
 @media (max-width: 768px) {
 	.page-title {  padding-top: 20px; }
 	nav a { background-color: rgb(20 20 20/0.0); }
+
+	h1 {
+		font: 400 56px/1.2 "Montserrat", sans-serif;
+	   color: white;
+	   padding-bottom: 20px; 
+	   letter-spacing: -1px;
+	}
+   
+	.hero h1 {
+	   font: 400 40px/1.2 "Montserrat", sans-serif;
+	   font-style: italic;
+	   color: rgb(20 20 20);
+	   letter-spacing: -2px;
+   }
+   
+	.page-title {
+	   font: 400 64px/1.2 "Montserrat", sans-serif;
+	   padding: 80px 0 60px 0;
+	   text-align: center;
+   }
+   
+	h2 {
+	   font: 400 34px/1.5 "Montserrat", sans-serif;
+	  color: white;
+	  padding-bottom: 10px;
+	  padding-top: 28px;
+   }
 }
+

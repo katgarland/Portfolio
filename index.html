@@ -26,12 +26,6 @@
 
  <!--page specific nav-->
 
- <style>
-	/* styling selected page */
-	.ins-wrapper > .main > .box-wrapper > a:nth-of-type(1) #nav-box > h1 { color: lightsteelblue; }
-	.ins-wrapper > .main > .box-wrapper > a:nth-of-type(1) #nav-box:hover h1 { text-decoration: none; }
-</style>
-
 	</head>
 
 	<body>
@@ -76,43 +70,62 @@
 					<h1>Playground</h1>
 				</div></a>
 
+				<div class="secondary">
+					<div id="nav-box">
+						<a href="#selected1"><h1>I'm Katherine!</h1></a>
+					</div>	
+				</div>
+                <div class="tertiary">
+					<div id="nav-box">
+						<ul>
+							<li><a href="#selected2">Contact</a></li>
+							<li><a href="#selected3">CV</a></li>
+						</ul>
+					</div>
+				</div>
+
 			</div>
 		</nav>
 
 		
 		</div>
 	
-	</body>
-
 	<main>
 	
-			
-	
 		<div class="page-wrapper">
-			<figure class="page-img-full"><img src=assets/images/banner.png></figure>
 			
 			<!-- <div class="space-small"></div> -->
 
+			<!-- Hero -->
+			 <div class="hero">
+				<h1>Combining aesthetics with storytelling to create engaging experiences </h1>
+			 </div>
+
+			 <div class="space-small"></div>
+
 			<!-- Intro -->
+			<!-- <div class="double-span">
+				<div class="double-span-1">
+					<h1 id="selected1">Hello! I'm Katherine.</h1>
+				<p>
+					I believe the best way to create a connection with my audience is through strong storytelling, and my design work strives to create distinct, compelling experiences that clearly communicate information in a way that is memorable and impactful. After all, the best medium is not print or pixels—it is the viewer's mind.
+				</p>
+				</div>
+				<div class="double-span-2">
+					<figure><img src="assets/images/bannerC.png"></figure>
+				</div>
+			</div> -->
+
 			<h1 id="selected1">Hello! I'm Katherine.</h1>
 			<p>
-				I'm a visual designer based in Chicago, IL. My belief is that by carefully controlling and applying aesthetics, we can curate the world into an overall better place.  I am interested in all aspects of design, and my recent focus has been on UI/UX. 
-			</p>
-			<p>
-				I believe the best way to create a connection with my audience is through strong storytelling, and my design work strives to create distinct, compelling experiences that clearly communicate brand information in a way that is memorable and impactful. After all, the best medium is not print or pixels–it is the viewer’s mind. 
-			</p>
-			<p>
-				I am currently planning to complete my BFA with concentration in Visual Communications in the spring  of 2025, and I am looking for work opportunities! Please reach out to me if my work interests you.
+				I believe the best way to create a connection with my audience is through strong storytelling, and my design work strives to create distinct, compelling experiences that clearly communicate information in a way that is memorable and impactful. After all, the best medium is not print or pixels—it is the viewer's mind.
 			</p>
 			
-			<div class="space-small"></div>
-			<div class="space-small"></div>
-
-
+			<div class="space"></div>
 		
 			
 			<!-- Contact -->
-			<h1 id="selected3">Reach out to me!</h1>
+			<h1 id="selected2">Reach out to me!</h1>
 
 			<div class="buttons">
 				<a href="mailto:kgarla1@artic.edu"><div class="button" id="email">
@@ -130,7 +143,7 @@
 			
 			<!-- CV -->
 			<div class="div-list">
-				<h1 id="selected2">My CV!</h1>
+				<h1 id="selected3">My CV</h1>
 				<h2>Education</h2>
 				<div class="line-list">
 					<ul>
@@ -154,6 +167,7 @@
 						<li>Figma</li>
 						<li>Canva</li>
 						<li>Google Workspace</li>
+						<li>Procreate</li>
 						<li>Clip Studio Paint</li>
 					</ul>
 					</div>
@@ -162,9 +176,11 @@
 						<li><h3>Conceptual:</h3></li>
 						<li>Visual Design</li>
 						<li>UX/UI Design</li>
-						<li>Art Direction</li>
-						<li>Typography</li>
+						<li>Brand Design</li>
 						<li>HTML+CSS</li>
+						<li>Typography</li>
+						<li>Illustration</li>
+						
 					<ul>
 					</div>
 				</div>
@@ -186,5 +202,15 @@
 	<!-- Page Specific Styles -->
 	<style>
 		.div-list h2:nth-of-type(n+2) { padding-top: 24px; }
+		.ins-wrapper > .main > .box-wrapper > a:nth-of-type(1) #nav-box > h1 { color: lightsteelblue; }
+		.ins-wrapper > .main > .box-wrapper > a:nth-of-type(1) #nav-box:hover h1 { text-decoration: none; }
+
+	@media (max-width: 992x) { 
+		.double-span { flex-direction: column; flex: 1 0 auto; }
+		.double-span .double-span-1 { width: 100%; order: 1}
+		.double-span .double-span-2 { width: 100%; order: 2}
+		.double-span .double-span-2 figure img { width: 100%; order: 2}
+		.main { background-color: red;}
+	} 
 	</style>
 </html>
