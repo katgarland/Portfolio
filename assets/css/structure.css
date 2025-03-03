@@ -190,6 +190,8 @@ a .button button:hover {
 	footer { max-height: 80px; padding: 13px 0 10px 22px;  }
 	footer a:nth-of-type(2) { position: static; padding-top: 0; }
 	.foot { height: 54px; }
+
+	.hero { padding: 40px 28px;}
 }
 
 /* 
