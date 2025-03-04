@@ -167,8 +167,8 @@ figcaption {
 
 .scroll-content img {
 	display: flex;
-	max-height: 90vh;
-	padding: 0 10px;
+	max-height: 92vh; /* looked dumb on ipad */
+	padding: 0; /* looked dumb on ipad */
 }
 
 /* scrollbar - apparently this doesn't work in firefox */
@@ -198,6 +198,10 @@ figcaption {
 	.img-gallery-minor { display: flex; flex-direction: column; max-width: auto; }
 	.img-gallery-minor .img-wrapper { margin: 0; }
 	.img-gallery-minor .img-wrapper .img { height: auto; 	border-radius: 20px; }
+
+	.double-span-wrapper > .double-span-wrapper {
+		flex-direction: column;
+	}
 
 }
  
