@@ -63,7 +63,7 @@ main {
 	display: flex;
 	background-color: lightsteelblue;
 	border-radius: 20px;
-	padding: 80px 40px;
+	padding: 80px 36px;
 	justify-content: center;
 	justify-items: center;
 	text-align: center;
@@ -172,11 +172,13 @@ a .button button:hover {
 @media (max-width: 576px) { /* controls what happens between 576px and 786px */
 
 	/* stack the footer */
-	footer { max-height: 80px; padding: 13px 0 10px 22px;  }
-	footer a:nth-of-type(2) { position: static; padding-top: 0; }
-	.foot { height: 54px; }
+	footer { 
+		padding: 13px 0 10px 22px; 
+		position: static; bottom: 0;
+	 }
+		
+	 .hero { padding: 60px 36px; }
 
-	.hero { padding: 60px 28px;}
 }
 
  
@@ -187,10 +189,12 @@ a .button button:hover {
 	.page-wrapper { padding: 72px 24px 0 24px; }
 
 	/* double span ordering*/
-	/* .double-span { flex-direction: column; flex: 1 0 auto; }
+	.double-span { flex-direction: column; flex: 1 0 auto; }
 	.double-span .double-span-1 { width: 100%; order: 2}
 	.double-span .double-span-2 { width: 100%; order: 1}
-	.double-span-2 figure img { width: 100%; order: 1} */
+	.double-span-2 figure img { width: 100%; order: 1}
+
+
 }
 
 
