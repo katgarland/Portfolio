@@ -164,6 +164,7 @@ p > a {
 
 	.double-list { display: flex; flex-direction: column; }
 	.double-list .list-grid:first-of-type { padding-bottom: 14px; }
+	.hero { padding: 100px 40px; }
 }
 
 /* medium screen */

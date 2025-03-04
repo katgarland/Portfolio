@@ -55,7 +55,7 @@ main {
 	text-align: center;
 }
 
-.double-span-2 img { width: 100%; border-radius: 10px; }
+.double-span-2 img { width: 100%; border-radius: 20px; }
 
 /* HERO BOX 
 ========================= */
@@ -64,7 +64,7 @@ main {
 	background-color: lightsteelblue;
 	border-radius: 20px;
 	margin-bottom: 30px;
-	padding: 60px 40px;
+	padding: 80px 40px;
 	justify-content: center;
 	justify-items: center;
 	text-align: center;
@@ -172,7 +172,14 @@ a .button button:hover {
 =============================== */
 @media (max-width: 576px) { /* controls what happens between 576px and 786px */
 
+	/* stack the footer */
+	footer { max-height: 80px; padding: 13px 0 10px 22px;  }
+	footer a:nth-of-type(2) { position: static; padding-top: 0; }
+	.foot { height: 54px; }
+
+	.hero { padding: 60px 28px;}
 }
+
  
 /* 
 =Medium Screen > 768px  - Anything smaller than Medium
@@ -181,18 +188,12 @@ a .button button:hover {
 	.page-wrapper { padding: 72px 24px 0 24px; }
 
 	/* double span ordering*/
-	.double-span { flex-direction: column; flex: 1 0 auto; }
+	/* .double-span { flex-direction: column; flex: 1 0 auto; }
 	.double-span .double-span-1 { width: 100%; order: 2}
 	.double-span .double-span-2 { width: 100%; order: 1}
-	.double-span-2 figure img { width: 100%; order: 1}
-
-	/* stack the footer */
-	footer { max-height: 80px; padding: 13px 0 10px 22px;  }
-	footer a:nth-of-type(2) { position: static; padding-top: 0; }
-	.foot { height: 54px; }
-
-	.hero { padding: 40px 28px;}
+	.double-span-2 figure img { width: 100%; order: 1} */
 }
+
 
 /* 
 =Medium Screen > 768px Start Collapse - Anything BIGGER than medium

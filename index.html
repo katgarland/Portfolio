@@ -24,7 +24,21 @@
 		 <link rel="stylesheet" href="assets/css/hamburger.css">
         
 
- <!--page specific nav-->
+	<!-- Page Specific Styles -->
+	<style>
+		.div-list h2:nth-of-type(n+2) { padding-top: 24px; }
+		.ins-wrapper > .main > .box-wrapper > a:nth-of-type(1) #nav-box > h1 { color: lightsteelblue; }
+		.ins-wrapper > .main > .box-wrapper > a:nth-of-type(1) #nav-box:hover h1 { text-decoration: none; }
+
+	/* double span ordering*/
+		@media (max-width: 1200px) {
+	.double-span { flex-direction: column; flex: 1 0 auto; }
+	.double-span .double-span-1 { width: 100%; order: 1}
+	.double-span .double-span-2 { width: 100%; order: 2}
+	.double-span-2 figure img { width: 100%; order: 2; margin-top: 20px;}
+
+}
+	</style>
 
 	</head>
 
@@ -103,42 +117,39 @@
 
 			 <div class="space-small"></div>
 
-			<!-- Intro -->
-			<!-- <div class="double-span">
-				<div class="double-span-1">
-					<h1 id="selected1">Hello! I'm Katherine.</h1>
-				<p>
-					I believe the best way to create a connection with my audience is through strong storytelling, and my design work strives to create distinct, compelling experiences that clearly communicate information in a way that is memorable and impactful. After all, the best medium is not print or pixels—it is the viewer's mind.
-				</p>
-				</div>
-				<div class="double-span-2">
-					<figure><img src="assets/images/bannerC.png"></figure>
-				</div>
-			</div> -->
-
+			 <div class="double-span">
+			 <div class="double-span-1">
 			<h1 id="selected1">Hello! I'm Katherine.</h1>
 			<p>
 				I believe the best way to create a connection with my audience is through strong storytelling, and my design work strives to create distinct, compelling experiences that clearly communicate information in a way that is memorable and impactful. After all, the best medium is not print or pixels—it is the viewer's mind.
 			</p>
+			</div>
+
+			<div class="double-span-2">
+				<figure><img src="assets/images/banner.png"></figure>
+			</div>
+		</div>
 			
 			<div class="space"></div>
 		
 			
 			<!-- Contact -->
-			<h1 id="selected2">Reach out to me!</h1>
-
-			<div class="buttons">
-				<a href="mailto:kgarla1@artic.edu"><div class="button" id="email">
-					<button> Email </button>
-				</div></a>
+					<h1 id="selected2">Reach out to me!</h1>
+					<p>I am currently planning to complete my BFA with concentration in Visual Communications in the spring of 2025, and I am looking for work opportunities! Please reach out to me if my work interests you.</p>
+					<div class="buttons">
+						<a href="mailto:kgarla1@artic.edu"><div class="button" id="email">
+							<button> Email </button>
+						</div></a>
+						<a href="https://www.linkedin.com/in/katgarland" target="_blank"><div class="button" id="linkedin">
+							<button> LinkedIn </button>
+						</div></a>
+				</div>
 				
-				<a href="https://www.linkedin.com/in/katgarland" target="_blank"><div class="button" id="linkedin">
-					<button> LinkedIn </button>
-				</div></a>
-			</div>
 
-			<div class="space-small"></div>
-			<div class="space-small"></div>
+			
+	
+
+			<div class="space"></div>
 			
 			
 			<!-- CV -->
@@ -199,18 +210,5 @@
 		<a href="https://www.linkedin.com/in/katgarland" target="_blank">Katherine Garland</a>
 	</footer>
 
-	<!-- Page Specific Styles -->
-	<style>
-		.div-list h2:nth-of-type(n+2) { padding-top: 24px; }
-		.ins-wrapper > .main > .box-wrapper > a:nth-of-type(1) #nav-box > h1 { color: lightsteelblue; }
-		.ins-wrapper > .main > .box-wrapper > a:nth-of-type(1) #nav-box:hover h1 { text-decoration: none; }
 
-	@media (max-width: 992x) { 
-		.double-span { flex-direction: column; flex: 1 0 auto; }
-		.double-span .double-span-1 { width: 100%; order: 1}
-		.double-span .double-span-2 { width: 100%; order: 2}
-		.double-span .double-span-2 figure img { width: 100%; order: 2}
-		.main { background-color: red;}
-	} 
-	</style>
 </html>
