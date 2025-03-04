@@ -63,7 +63,6 @@ main {
 	display: flex;
 	background-color: lightsteelblue;
 	border-radius: 20px;
-	margin-bottom: 30px;
 	padding: 80px 40px;
 	justify-content: center;
 	justify-items: center;
@@ -109,7 +108,7 @@ footer a:nth-of-type(2) { /* current page marker */
 =======================*/
 
 .space {
-	height: 140px;
+	height: 100px;
 }
 
 .space-small {
