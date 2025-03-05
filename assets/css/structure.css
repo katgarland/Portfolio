@@ -22,7 +22,7 @@ main {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	padding-left: 270px; padding-right: 100px; padding-top: 32px;
+	padding-left: 270px; padding-right: 100px; padding-top: 48px;
 	justify-content: center;
 }
 
@@ -136,7 +136,7 @@ a .button button {
 	margin-right: 10px;
 }
 
-.buttons aa:nth-of-type(2) .button button {
+.buttons a:nth-of-type(2) .button button {
 	margin-left: 10px;
 }
 
@@ -199,11 +199,12 @@ a .button button:hover {
 =Xtra Large Screen > 992px Larger than Fullscreen Mac Window
 =============================== */
 @media (min-width: 1600px) { 
-
 	.page-wrapper { 
 		max-width: 1400px;
-		padding-left: 200px; padding-right: 200px; padding-top: 32px;
+		padding-left: 200px; padding-right: 200px; padding-top: 48px;
 	}
+
+	.hero { padding: 140px 60px; }
 
 } 
 
