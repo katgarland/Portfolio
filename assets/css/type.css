@@ -154,6 +154,20 @@ p > a {
 	padding: 2px 0 10px 10px;
 }
 
+/* FOOTER TYPE
+=======================*/
+footer a { /* katherine garland (so they dont forget who theyre looking at) */
+	text-decoration: none;
+	color: inherit;
+	color: lightgrey;
+}
+
+footer a:hover { color: gold; text-decoration: underline; }
+
+/* footer p {
+	font: 400 16px/1.5 "Montserrat", sans-serif;
+} */
+
 
 /* MEDIA QUERIES
 =======================*/
@@ -165,6 +179,10 @@ p > a {
 	.double-list { display: flex; flex-direction: column; }
 	.double-list .list-grid:first-of-type { padding-bottom: 14px; }
 	.hero { padding: 80px 30px; }
+
+	footer p {
+		font: 400 14px/1.5 "Montserrat", sans-serif;
+	}
 }
 
 /* medium screen */

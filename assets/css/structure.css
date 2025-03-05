@@ -86,23 +86,6 @@ footer {
 	z-index: 10;
 }
 
-footer a { /* katherine garland (so they dont forget who theyre looking at) */
-	text-decoration: none;
-	color: inherit;
-	color: lightgrey;
-}
-
-footer a:hover { color: gold; }
-
-footer a:nth-of-type(2) { /* current page marker */
-	display: flex;
-	position: absolute;
-	right: 60px;
-	top: 10px;
-	color: lightsteelblue;
-	font: 400 18px/1.5 "Montserrat", sans-serif;
-}
-
 
 /* SPACE
 =======================*/
@@ -177,7 +160,6 @@ a .button button:hover {
 		position: static; bottom: 0;
 	 }
 		
-	 .hero { padding: 60px 36px; }
 
 }
 
