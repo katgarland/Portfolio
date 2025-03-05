@@ -140,8 +140,8 @@ figcaption {
 /* 
 = Style the hover event */
 .img-wrapper figcaption:hover {
-	background-color: rgb(255 215 0/0.5);
-	color: rgb(20 20 20);
+	background-color: rgb(20 20 20/0.8);
+	color: gold;
 }
 
 

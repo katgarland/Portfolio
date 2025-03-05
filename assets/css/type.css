@@ -218,3 +218,10 @@ footer a:hover { color: gold; text-decoration: underline; }
    }
 }
 
+@media (min-width: 992px) {
+	.img-gallery figcaption {  font: 400 64px/1.5 "Montserrat", sans-serif; }
+}
+
+@media (min-width: 1400px) {
+	.img-gallery figcaption {  font: 400 84px/1.5 "Montserrat", sans-serif; }
+}
