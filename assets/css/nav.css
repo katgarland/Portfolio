@@ -2,6 +2,7 @@
 /* general */ 
 nav { 
 	display: flex;
+	position: fixed;
 	flex-direction: column; 
 	/* width: 200px; */
 	width: 200px;
@@ -15,7 +16,7 @@ nav {
 .main {
 	position: fixed;
 	margin: 0;
-	padding-top: 20px;
+	padding-top: 42px;
 	padding-left: 40px;
 	background-color: rgb(20 20 20);
 }
@@ -79,9 +80,6 @@ nav {
 
 /* HOVER ANIMATIONS
 ================================ */
-#nav-box:hover {
-	/* border: solid 1.25px gold; */
-}
 #nav-box:hover h1 {
 	color: gold;
 	text-decoration-line: underline;
@@ -165,7 +163,6 @@ nav {
 		flex: 0 1 auto;
 		padding-top: 88px;
 	}
-
 
 	#nav-box h1 { 
 		font: 400 20px/1.5 "Montserrat", sans-serif; 

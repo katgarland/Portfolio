@@ -1,0 +1,238 @@
+/* Main
+========================= */
+.hero {
+	display: grid;
+    position: absolute;
+	background-color: rgb(20 20 20);
+    padding: 0 36px;
+    /* padding-top: 10vh; */
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    height: 90vh;
+    z-index: 100 !important;
+    margin: 0;
+
+    overflow: hidden;
+
+    animation: fadeIn-hero 1.4s ease-in-out forwards;
+    animation-delay: 550ms;
+} 
+
+.main { background-color: rgb(20 20 20/0.0)}
+
+.page-wrapper {
+     padding-top: 90vh;
+}
+
+.hero h1 {
+	font: 400 70px/1.2 "Montserrat", sans-serif;
+	font-style: italic;
+	color: rgb(20 20 20);
+	letter-spacing: -2px;
+
+    animation: fadeIn 1.4s ease-in-out forwards;
+    animation-delay: 550ms;
+    opacity: 0;
+}
+
+/* Fall Boxes
+======================= */
+.fallbox1, .fallbox2, .fallbox3, .fallbox4, .fallbox5, .fallbox6 {
+    position: absolute;
+    margin: 0;
+    top: -200%;
+    width: 100%;
+    background-color: lightsteelblue;
+    animation: fall 0.4s ease-in-out forwards;
+}
+.fallbox1 {
+    height: 4px;
+    animation-delay: 30ms;
+}
+.fallbox2 {
+    height: 50px;
+    animation-delay: 50ms;
+}
+.fallbox3 {
+    height: 100px;
+    animation-delay: 100ms;
+}
+.fallbox4 {
+    height: 300px;
+    animation-delay: 175ms;
+}
+.fallbox5 {
+    height: 100vh;
+    animation-delay: 350ms;
+}
+.fallbox6 {
+    height: 130vh;
+    animation-delay: 600ms;
+}
+
+/* 
+ANIMATIONS
+================================================  */
+
+/* falling boxes */
+@keyframes fall {
+    0% { top: -100vh; }
+    /* 99% { display: flex; } */
+    99% { opacity: 1; } /* prevents divs from being visible on mobile; overflow:hidden in the .hero isnt working at collapsed size */
+    100% { top: 100vh; opacity: 0; }
+}
+
+/* text and anchor */
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* lightsteelblue colorblock */
+@keyframes fadeIn-hero {
+	0% { background-color: rgb(20 20 20) }
+	100% { background-color: lightsteelblue; }
+}
+
+/*
+Anchor Wrapper
+============================================= */
+.anchor-button {
+    display: flex;
+    position: relative;;
+    /* border: solid 1px blue; */
+    justify-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    padding: 2px;
+    left: 50%;
+    translate:calc(-50%);
+}
+
+.anchor-wrapper {
+    position: relative;
+    display: flex;
+	width: 32px; 
+    height: 40px;
+	align-items: center;
+    /* border: solid 1px red; */
+}
+
+/*
+Anchor lines
+============================================= */
+.anchor-line1,
+.anchor-line2 {
+	background-color: rgb(20 20 20);
+	height: 2px;
+	width: 100%;
+    
+    animation: fadeIn 1.4s ease-in-out forwards;
+    animation-delay: 550ms;
+    opacity: 0;
+}
+
+/*
+=create a new positioning context for the top + bottom lines */
+.anchor-line1, .anchor-line2 {
+	position: relative;
+}
+
+/*
+=position the top + bottom lines */
+.anchor-line1,
+.anchor-line2 {
+	content: "";
+	position: absolute;
+	transition: .3s ease-in-out;
+}
+
+/*
+=offset the top + bottom lines above + below the center line */
+.anchor-line1 { 
+    rotate: 45deg; 
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.anchor-line2 { 
+    rotate: -45deg; 
+    transform: translateX(50%);
+    bottom: 0;
+
+}
+
+/* VIDEO (failed idea) 
+========================= */
+.hero video {
+    max-height: 85vh;
+    width: auto;
+}
+
+/* 
+=Small screen < 576px
+=============================== */
+@media (max-width: 576px) { /* controls what happens between 576px and 786px */
+   
+
+
+}
+
+/* 
+=Medium Screen > 768px  - Anything smaller than Medium
+=============================== */
+@media (max-width: 768px) {
+    .hero {
+        position: static;
+        margin-top: 54px;
+        padding: 10vh 100px 10px 100px;
+        height: 80vh;
+        overflow: hidden !important;
+    }
+
+    .page-wrapper {
+        padding-top: 0;
+   }
+
+   .hero h1 {
+    font: 400 40px/1.2 "Montserrat", sans-serif;
+    font-style: italic;
+    color: rgb(20 20 20);
+    letter-spacing: -2px;
+}
+
+.fallbox1, .fallbox2, .fallbox3, .fallbox4, .fallbox5, .fallbox6 {
+    width: 100vw;
+    left: 0;
+}
+
+}
+
+/* 
+=Medium Screen > 768px Start Collapse - Anything BIGGER than medium
+=============================== */
+@media (min-width: 768px) {
+	.hero { padding: 10vh 80px 10px 80px; }
+}
+
+
+/*  
+=Large Screen > 992px My Mac Window
+=============================== */
+@media (min-width: 992px) { 
+	.hero {
+        padding: 20vh 100px 10px 100px;
+
+    }
+} 
+
+/*  
+=Very super large screen
+=============================== */
+@media (min-width: 1600px) { 
+    .hero {
+        padding: 20vh 150px 10px 150px;
+    }
+}
+

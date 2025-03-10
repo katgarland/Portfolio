@@ -22,7 +22,7 @@ main {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	padding-left: 270px; padding-right: 100px; padding-top: 48px;
+	padding-left: 270px; padding-right: 100px; padding-top: 52px;
 	justify-content: center;
 }
 
@@ -59,7 +59,7 @@ main {
 
 /* HERO BOX 
 ========================= */
-.hero {
+/* .hero {
 	display: flex;
 	background-color: lightsteelblue;
 	border-radius: 20px;
@@ -67,7 +67,7 @@ main {
 	justify-content: center;
 	justify-items: center;
 	text-align: center;
-}
+} */
 
 
 /* F00TER
@@ -203,8 +203,6 @@ a .button button:hover {
 		max-width: 1400px;
 		padding-left: 200px; padding-right: 200px; padding-top: 48px;
 	}
-
-	.hero { padding: 140px 60px; }
 
 } 
 

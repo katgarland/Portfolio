@@ -133,3 +133,13 @@
 }
 
 /* ========================================== */
+
+
+
+@media (max-width: 768px) {
+.hb_wrapper {
+	left: 0;
+	position: absolute;
+}
+
+}

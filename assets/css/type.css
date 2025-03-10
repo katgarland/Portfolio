@@ -7,12 +7,7 @@
 	letter-spacing: -1px;
  }
 
- .hero h1 {
-	font: 400 70px/1.2 "Montserrat", sans-serif;
-	font-style: italic;
-	color: rgb(20 20 20);
-	letter-spacing: -2px;
-}
+/* hero h1 was moved to hero.css */
 
  .page-title {
 	font: 400 70px/1.2 "Montserrat", sans-serif;
@@ -63,6 +58,19 @@ a { text-decoration: none; }
 	padding-top: 4px;
 }
 
+
+ /* Experimental Project details
+ ===========================*/
+ .project_details {
+	display: flex;
+	flex-direction: row;
+ }
+
+ .project_details p {
+	font: 400 16px/1.6 "Montserrat", sans-serif;
+	color: lightgrey;
+ }
+
 /* LINE LISTS
 =======================*/
 .line-list {
@@ -97,7 +105,9 @@ nav h1 {
 	letter-spacing: -0.2px;
 }
 
-nav a { color: lightgrey; background-color: rgb(20 20 20); }
+/* nav a { color: lightgrey; 
+	background-color: rgb(20 20 20);
+ } */
 
 
 /* Secondary */
@@ -178,7 +188,6 @@ footer a:hover { color: gold; text-decoration: underline; }
 
 	.double-list { display: flex; flex-direction: column; }
 	.double-list .list-grid:first-of-type { padding-bottom: 14px; }
-	.hero { padding: 80px 30px; }
 
 	footer p {
 		font: 400 14px/1.5 "Montserrat", sans-serif;
@@ -196,13 +205,6 @@ footer a:hover { color: gold; text-decoration: underline; }
 	   padding-bottom: 20px; 
 	   letter-spacing: -1px;
 	}
-   
-	.hero h1 {
-	   font: 400 40px/1.2 "Montserrat", sans-serif;
-	   font-style: italic;
-	   color: rgb(20 20 20);
-	   letter-spacing: -2px;
-   }
    
 	.page-title {
 	   font: 400 64px/1.2 "Montserrat", sans-serif;
