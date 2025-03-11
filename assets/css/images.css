@@ -144,19 +144,18 @@ figcaption {
 	color: gold;
 }
 
-
-
 /* HORIZONTAL SCROLL
 ======================================= */
 .scroll-container {
 	display: flex;
 	overflow: auto;
-	width: 100%;
+	/* width: 100%; */
 	white-space: nowrap;
 	background-color: rgb(20 20 20);
-	height: 92vh;
-	border: solid 1.5px darkgray;
+	height: 90vh;
+	/* border: solid 1.5px darkgray; */
 	border-radius: 20px;
+	margin-left: 270px;
 }
 
 /* Scroll Items */
@@ -167,7 +166,8 @@ figcaption {
 
 .scroll-content img {
 	display: flex;
-	max-height: 92vh; /* looked dumb on ipad */
+	height: 90vh;
+	object-fit: contain;
 	padding: 0; /* looked dumb on ipad */
 }
 
@@ -183,13 +183,8 @@ figcaption {
 }
 
 
-
-
-
-
-
 /* MEDIA QUERIES
-=======================*/
+================================================*/
 
 /* 
 =Small screen < 576px
@@ -218,6 +213,8 @@ figcaption {
 		align-items: center; /* vertical center */
 		padding-top: 10px;
 	}
+
+	.scroll-container { margin-left: 40px;}
 }
 
 @media (max-width: 840px) { /* selected gallery images - collapse double span*/
@@ -252,7 +249,7 @@ figcaption {
 /* 
 =Xtra Large Screen > 992px Larger than Fullscreen Mac Window
 =============================== */
-@media (min-width: 1400px) { 
+@media (min-width: 1600px) { 
 	.img-gallery-minor {
 		display: grid; grid-template-columns: repeat(3, 1fr); max-width: auto;
 	}
@@ -263,6 +260,10 @@ figcaption {
 	.img-single { max-width: 1000px;}
 	.img-gallery img { max-width: 1000px; }
 	.page-img-full {max-width: 1000px; }
+
+	.scroll-container { 
+		margin: 0 auto;
+		margin-left: 400px; }
 
 	
 
