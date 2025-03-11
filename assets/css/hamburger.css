@@ -138,8 +138,9 @@
 
 @media (max-width: 768px) {
 .hb_wrapper {
-	left: 0;
+	left: -10px;
 	position: absolute;
+	width: 100vw;
 }
 
 }
