@@ -39,7 +39,7 @@
 	/* background-color: gold; */
     width: 48px; height: 48px;
     border-bottom: solid 1.25px white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 	display: flex;
 	/* justify-content: center; main or horizontal axis */
 	align-items: center; /* cross or vertical axis */
@@ -134,12 +134,10 @@
 
 /* ========================================== */
 
-
-
 @media (max-width: 768px) {
 .hb_wrapper {
-	left: -10px;
-	position: absolute;
+	left: -4px;
+	position: fixed;
 	width: 100vw;
 }
 

@@ -152,8 +152,7 @@ nav {
 	.main {
 		display: flex;
 		margin: 0 auto; padding: 0;
-		
-		width: 100%;
+		width: 100vw;
 		align-items: center;
 	}
 	.box-wrapper {

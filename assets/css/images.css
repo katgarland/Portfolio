@@ -144,6 +144,31 @@ figcaption {
 	color: gold;
 }
 
+/* QUAD SPAN IMAGE GALLERY ======================= 4 */
+.small-span-wrapper {
+	grid-template-columns: repeat(4, 1fr);
+	display: grid;
+	/* grid-template-rows: repeat(2, 1fr); */
+	row-gap: 4px;
+	column-gap: 8px;
+	 justify-content: center; /* horizontal center  */
+	align-items: center; /* vertical center */
+}
+
+.small-span-wrapper figure { height: auto; width: auto;}
+
+.small-span-wrapper img {
+	width: 100%;
+} 
+
+.small-span-wrapper p {
+	width: 100%;
+} 
+
+/* put media queries here so the order doesnt interfere */
+@media (max-width: 992px) {  .small-span-wrapper { grid-template-columns: repeat(3, 1fr); }  }
+@media (max-width: 576px) { .small-span-wrapper { grid-template-columns: repeat(2, 1fr); } } 
+
 /* HORIZONTAL SCROLL
 ======================================= */
 .scroll-container {
@@ -214,6 +239,7 @@ figcaption {
 		padding-top: 10px;
 	}
 
+
 	.scroll-container { margin-left: 40px;}
 }
 
@@ -221,6 +247,7 @@ figcaption {
 	.img-gallery { 
 		display: flex;
 	   flex-direction: column;  }
+	  
 }
 
 /* 
@@ -233,6 +260,7 @@ figcaption {
 	
 }
 
+
 /* 
 =Large Screen > 992px My Mac Window
 =============================== */
@@ -244,15 +272,15 @@ figcaption {
 /* .img-gallery img { max-width: 800px; } */
 .page-img-full {max-width: 800px; }
 
-} 
+
 
 /* 
 =Xtra Large Screen > 992px Larger than Fullscreen Mac Window
 =============================== */
 @media (min-width: 1600px) { 
-	.img-gallery-minor {
+	/* .img-gallery-minor {
 		display: grid; grid-template-columns: repeat(3, 1fr); max-width: auto;
-	}
+	} */
 
 	/* .img-gallery {
 		display: grid; grid-template-columns: repeat(2, 1fr); max-width: auto;
@@ -264,8 +292,5 @@ figcaption {
 	.scroll-container { 
 		margin: 0 auto;
 		margin-left: 400px; }
-
-	
-
-	
+} 
 } 
