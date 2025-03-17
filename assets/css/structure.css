@@ -160,7 +160,7 @@ a .button button:hover {
 =Medium Screen > 768px  - Anything smaller than Medium
 =============================== */
 @media (max-width: 768px) {
-	.page-wrapper { padding: 72px 24px 0 24px; }
+	.page-wrapper { padding: 72px 18px 0 18px; }
 
 	/* double span ordering*/
 	.double-span { flex-direction: column; flex: 1 0 auto; }
