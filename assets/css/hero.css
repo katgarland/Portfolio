@@ -26,8 +26,8 @@
 }
 
 .hero h1 {
-	font: 250 70px/1.2 "Montserrat", sans-serif;
-	font-style: italic;
+	font: 300 70px/1.2 "Montserrat", sans-serif;
+	/* font-style: italic; */
 	color: rgb(20 20 20);
 	letter-spacing: -2px;
 
